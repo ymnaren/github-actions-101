@@ -2,7 +2,6 @@ name: "Hello Actions!"
 
 on:
   workflow_dispatch:
-  push:
 
 jobs:
   say-hello:
@@ -12,3 +11,5 @@ jobs:
         run: "echo 'Hei på deg GitHub Actions!'"
       - name: "Echo Goodnight"
         run: "echo 'Natta!'"
+      - name: "Echo something else"
+        run: "echo 'Dette er et ekstra steg!'"
